@@ -1,0 +1,78 @@
+{
+    "ac_kwargs":	{},
+    "actor_critic":	"MLPActorCritic",
+    "alpha":	0.2,
+    "batch_size":	32,
+    "conv_info":	[
+        {
+            "kernel_size":	3,
+            "out_channel":	64,
+            "padding":	0,
+            "stride":	2
+        },
+        {
+            "kernel_size":	3,
+            "out_channel":	64,
+            "padding":	0,
+            "stride":	2
+        },
+        {
+            "kernel_size":	3,
+            "out_channel":	64,
+            "padding":	0,
+            "stride":	2
+        },
+        {
+            "kernel_size":	3,
+            "out_channel":	64,
+            "padding":	0,
+            "stride":	1
+        },
+        {
+            "kernel_size":	3,
+            "out_channel":	64,
+            "padding":	0,
+            "stride":	1
+        }
+    ],
+    "crop_h":	199,
+    "crop_w":	255,
+    "device":	"cuda",
+    "env_instance_maker":	"ambidex_peg_in_hole_env_wrapped",
+    "epochs":	100,
+    "gamma":	0.99,
+    "headless":	true,
+    "img_h":	255,
+    "img_stack_size":	4,
+    "img_w":	303,
+    "logger":	{
+        "<spinup.utils.logx.EpochLogger object at 0x7fca8011db70>":	{
+            "epoch_dict":	{},
+            "exp_name":	null,
+            "first_row":	true,
+            "log_current_row":	{},
+            "log_headers":	[],
+            "output_dir":	"/tmp/experiments/1596509452",
+            "output_file":	{
+                "<_io.TextIOWrapper name='/tmp/experiments/1596509452/progress.txt' mode='w' encoding='UTF-8'>":	{
+                    "mode":	"w"
+                }
+            }
+        }
+    },
+    "logger_kwargs":	{
+        "output_dir":	"/tmp/experiments/1596509452"
+    },
+    "lr":	0.001,
+    "max_ep_len":	1000,
+    "model_save_path":	"/tmp/experiments/1596509452",
+    "num_test_episodes":	10,
+    "polyak":	0.995,
+    "replay_size":	10000,
+    "save_freq":	1,
+    "seed":	0,
+    "start_steps":	5000,
+    "steps_per_epoch":	4000,
+    "update_after":	1000,
+    "update_every":	50
+}
